@@ -1,0 +1,121 @@
+.registration {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #907eff;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #907eff,
+                transparent
+            );
+            border-radius: 2px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+
+        span {
+            color: #fff01a;
+        }
+    }
+
+    &__step-card {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__card {
+        background: linear-gradient(135deg, #1a0033, #001a33);
+        border-radius: 16px;
+        padding: 8px 25px;
+        width: 240px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+
+        100% {
+            box-shadow: 0 0 30px #ff00ff;
+        }
+    }
+
+    &__card-badge {
+        position: absolute;
+        top: 8px;
+        right: -12px;
+
+        width: 50px;
+        background: #fff01a;
+        color: black;
+        font-weight: bold;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    &__card-desc {
+        font-size: 12px;
+        a {
+            color: #fff01a;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background: #907eff;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 80%;
+            }
+        }
+    }
+}

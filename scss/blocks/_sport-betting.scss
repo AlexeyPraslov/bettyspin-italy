@@ -1,0 +1,85 @@
+.sport-betting {
+    padding: 40px 0;
+
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #907eff;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #907eff,
+                transparent
+            );
+            border-radius: 2px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+
+        span {
+            color: #fff01a;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__list-item {
+        background: rgba(5, 5, 20, 0.9);
+        color: white;
+        box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.4);
+        border: 1px solid transparent;
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: left;
+        flex: 0 0 auto;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        margin-bottom: 12px;
+        font-size: 14px;
+        position: relative;
+    }
+}
