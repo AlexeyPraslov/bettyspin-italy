@@ -1,9 +1,13 @@
 class CardsSection {
-    constructor() {
-        this.items = document.querySelectorAll(".cards__item");
-        this.popup = document.getElementById("cardsPopup");
-        this.popupClose = document.getElementById("cardsPopupClose");
-        this.section = document.querySelector(".cards");
+    constructor(config) {
+        const { sectionSelector, popupSelector, popupCloseSelector } = config;
+
+        this.items = document.querySelectorAll(
+            `${sectionSelector} .cards__item`,
+        );
+        this.popup = document.querySelector(popupSelector);
+        this.popupClose = document.querySelector(popupCloseSelector);
+        this.section = document.querySelector(sectionSelector);
 
         this.openedCount = 0;
         this.isVisible = false;
@@ -25,7 +29,7 @@ class CardsSection {
             }
         });
 
-        // Закрытие попапа по крестику (без анимации появления)
+        // Закрытие попапа по крестику
         this.popupClose.addEventListener("click", () => this.closePopup());
 
         // Отслеживание видимости секции
@@ -95,7 +99,7 @@ class CardsSection {
         const rect = this.section.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Секция считается видимой, если ее середина в области просмотра
+        // Секция считается видимой, если её середина в области просмотра
         const sectionMiddle = rect.top + rect.height / 2;
         const sectionVisible =
             sectionMiddle >= 0 && sectionMiddle <= windowHeight;
@@ -116,5 +120,22 @@ class CardsSection {
 
 // Инициализация при загрузке страницы
 document.addEventListener("DOMContentLoaded", () => {
-    new CardsSection();
+    // Создаём экземпляр для каждой секции
+    new CardsSection({
+        sectionSelector: "#cardsSection1",
+        popupSelector: "#cardsPopup1",
+        popupCloseSelector: "#cardsPopupClose1",
+    });
+
+    new CardsSection({
+        sectionSelector: "#cardsSection2",
+        popupSelector: "#cardsPopup2",
+        popupCloseSelector: "#cardsPopupClose2",
+    });
+
+    new CardsSection({
+        sectionSelector: "#cardsSection3",
+        popupSelector: "#cardsPopup3",
+        popupCloseSelector: "#cardsPopupClose3",
+    });
 });

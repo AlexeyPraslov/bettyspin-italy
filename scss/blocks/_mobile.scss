@@ -3,13 +3,33 @@
     position: relative;
     overflow: hidden;
 
+    @media (max-width: 1023px) {
+        padding: 64px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 44px 0;
+    }
+
+    /* ================= WRAPPER ================= */
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         gap: 44px;
         position: relative;
         z-index: 1;
+
+        @media (max-width: 1023px) {
+            gap: 34px;
+        }
+
+        @media (max-width: 767px) {
+            gap: 26px;
+        }
     }
+
+    /* ================= TITLE ================= */
 
     &__title {
         font-size: 36px;
@@ -34,6 +54,19 @@
             border-radius: 2px;
             box-shadow: 0 0 16px rgba(144, 126, 255, 0.7);
         }
+
+        @media (max-width: 1023px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 22px;
+
+            &::after {
+                bottom: -6px;
+                height: 3px;
+            }
+        }
     }
 
     &__intro {
@@ -46,6 +79,16 @@
             color: #fff01a;
             text-shadow: 0 0 10px rgba(255, 240, 26, 0.5);
             font-weight: 600;
+        }
+
+        @media (max-width: 1023px) {
+            font-size: 15px;
+            max-width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 1.6;
         }
     }
 
@@ -100,6 +143,28 @@
                 opacity: 1;
             }
         }
+
+        @media (max-width: 1023px) {
+            padding: 24px 22px 26px;
+            gap: 20px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 18px 16px 20px;
+            gap: 14px;
+
+            &:hover {
+                transform: none;
+                border-color: rgba(255, 255, 255, 0.14);
+                box-shadow:
+                    0 16px 36px rgba(0, 0, 0, 0.38),
+                    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+            }
+
+            &::before {
+                display: none;
+            }
+        }
     }
 
     &__subtitle {
@@ -107,6 +172,14 @@
         font-weight: 700;
         color: #fff01a;
         text-shadow: 0 0 12px rgba(255, 240, 26, 0.6);
+
+        @media (max-width: 1023px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 17px;
+        }
     }
 
     /* ================= STEPS ================= */
@@ -117,6 +190,10 @@
         padding: 0;
         display: grid;
         gap: 16px;
+
+        @media (max-width: 767px) {
+            gap: 12px;
+        }
     }
 
     &__step {
@@ -142,6 +219,24 @@
                 inset 0 0 18px rgba(255, 240, 26, 0.14),
                 0 0 22px rgba(255, 240, 26, 0.35);
         }
+
+        @media (max-width: 1023px) {
+            padding: 12px 14px;
+            gap: 12px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 10px 12px;
+            gap: 10px;
+
+            &:hover {
+                transform: none;
+                border-color: rgba(144, 126, 255, 0.25);
+                box-shadow:
+                    inset 0 0 12px rgba(144, 126, 255, 0.1),
+                    0 0 14px rgba(144, 126, 255, 0.18);
+            }
+        }
     }
 
     &__step-index {
@@ -162,6 +257,12 @@
         justify-content: center;
         box-shadow: 0 0 12px rgba(144, 126, 255, 0.45);
         flex-shrink: 0;
+
+        @media (max-width: 767px) {
+            min-width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
     }
 
     &__step-text {
@@ -173,6 +274,15 @@
             color: #fff01a;
             text-shadow: 0 0 10px rgba(255, 240, 26, 0.6);
             font-weight: 600;
+        }
+
+        @media (max-width: 1023px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 13.5px;
+            line-height: 1.55;
         }
     }
 }

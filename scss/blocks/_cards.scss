@@ -4,16 +4,22 @@
     display: flex;
     align-items: center;
     position: relative;
-    background: url("../images/22.png") center/cover no-repeat;
+    background: url("../images/table.webp") center/cover no-repeat;
     overflow: hidden;
+
+    @include vp-1023 {
+        height: auto;
+        padding: 80px 0 70px;
+    }
+
+    @include vp-767 {
+        padding: 60px 0 50px;
+    }
 
     &::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0;
         background: linear-gradient(
             135deg,
             rgba(10, 10, 20, 0.7),
@@ -28,16 +34,29 @@
         padding: 40px 20px;
         text-align: center;
         width: 100%;
+        position: relative;
+        z-index: 1;
+
+        @include vp-767 {
+            padding: 0 16px;
+        }
     }
 
     &__title {
         font-size: 2.8rem;
         margin-bottom: 12px;
         color: #907eff;
-        -webkit-background-clip: text;
         background-clip: text;
-
+        -webkit-background-clip: text;
         animation: cards-fade-in-up 0.8s ease forwards;
+
+        @include vp-1023 {
+            font-size: 2.2rem;
+        }
+
+        @include vp-767 {
+            font-size: 1.7rem;
+        }
     }
 
     &__subtitle {
@@ -45,25 +64,56 @@
         color: #a0a0c0;
         margin-bottom: 50px;
         animation: cards-fade-in-up 0.8s ease forwards 0.2s;
+
+        @include vp-1023 {
+            margin-bottom: 36px;
+        }
+
+        @include vp-767 {
+            font-size: 0.95rem;
+            margin-bottom: 26px;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: center;
+        align-items: stretch;
         gap: 40px;
         margin-bottom: 30px;
         padding: 0;
         list-style: none;
+
+        @include vp-1023 {
+            gap: 26px;
+        }
+
+        @include vp-767 {
+            gap: 12px;
+        }
     }
 
     &__item {
         width: 200px;
-        aspect-ratio: 2/3;
+        aspect-ratio: 2 / 3;
         perspective: 1200px;
         cursor: pointer;
         opacity: 0;
         transform: translateX(200px) scale(0.9);
         transition: none;
+        flex-shrink: 0;
+
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+        user-select: none;
+
+        @include vp-1023 {
+            width: 160px;
+        }
+
+        @include vp-767 {
+            width: 104px;
+        }
 
         &.cards__item--animate-in {
             animation: cards-appear-in 0.85s ease forwards;
@@ -82,6 +132,10 @@
         transition: transform 0.8s ease-out;
         border-radius: 20px;
         overflow: visible;
+
+        @include vp-767 {
+            border-radius: 14px;
+        }
     }
 
     &__item--flipped &__inner {
@@ -96,12 +150,18 @@
         align-items: center;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        transform-style: preserve-3d;
         font-size: 3rem;
         font-weight: bold;
         color: #fff;
         text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
         border-radius: 20px;
         overflow: hidden;
+
+        @include vp-767 {
+            border-radius: 14px;
+            font-size: 2rem;
+        }
     }
 
     &__face--front {
@@ -118,13 +178,14 @@
         height: 100%;
         object-fit: cover;
         position: absolute;
-        top: 0;
-        left: 0;
+        inset: 0;
+        transform: translateZ(1px); // ⚠️ фикс зеркалинга на iOS / mobile GPU
     }
 
     &__face span {
         position: relative;
         z-index: 2;
+        transform: translateZ(2px);
     }
 
     &__hint {
@@ -139,6 +200,12 @@
         font-weight: 600;
         animation: cards-pulse-hint 1.6s infinite;
         margin-bottom: 20px;
+
+        @include vp-767 {
+            font-size: 0.9rem;
+            padding: 7px 16px;
+            margin-bottom: 14px;
+        }
     }
 
     &__btn {
@@ -149,6 +216,11 @@
         font-size: 18px;
         cursor: pointer;
         transition: all 0.3s ease;
+
+        @include vp-767 {
+            font-size: 14px;
+            padding: 9px 22px;
+        }
 
         &:hover {
             box-shadow: 0 0 15px #ff00ff;
@@ -172,6 +244,7 @@
         pointer-events: none;
         transition: 0.3s ease;
         z-index: 1000;
+        padding: 20px;
 
         &--active {
             opacity: 1;
@@ -185,21 +258,35 @@
         border-radius: 22px;
         text-align: center;
         max-width: 380px;
-        width: 90%;
+        width: 100%;
         position: relative;
         animation: cards-fade-in-up 0.4s ease forwards;
+
+        @include vp-767 {
+            padding: 24px 22px 26px;
+            border-radius: 18px;
+        }
     }
 
     &__popup-title {
         font-size: 1.8rem;
         margin-bottom: 12px;
         color: #907eff;
+
+        @include vp-767 {
+            font-size: 1.4rem;
+        }
     }
 
     &__popup-text {
         color: #2de2e6;
         margin-bottom: 22px;
         font-size: 1.1rem;
+
+        @include vp-767 {
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+        }
     }
 
     &__popup-close {
@@ -212,6 +299,10 @@
         transition: 0.3s ease;
         color: #a0a0c0;
 
+        @include vp-767 {
+            font-size: 1.2rem;
+        }
+
         &:hover {
             color: #ff7e5f;
             transform: rotate(90deg);
@@ -222,6 +313,8 @@
         opacity: 0.85;
     }
 }
+
+/* ================= ANIMATIONS ================= */
 
 @keyframes cards-fade-in-up {
     0% {

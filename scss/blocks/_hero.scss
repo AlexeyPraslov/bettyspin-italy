@@ -1,10 +1,22 @@
 .hero {
     padding: 160px 0 80px 0;
 
+    @include vp-1023 {
+        padding: 120px 0 70px 0;
+    }
+
+    @include vp-767 {
+        padding: 100px 0 60px 0;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        @include vp-767 {
+            gap: 28px;
+        }
     }
 
     &__top-inner {
@@ -19,6 +31,47 @@
         padding: 60px 150px;
         min-height: 300px;
         position: relative;
+
+        @include vp-1023 {
+            padding: 50px 60px;
+            min-height: 260px;
+        }
+
+        @include vp-767 {
+            padding: 36px 24px 28px;
+            min-height: auto;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    /* ===== NEON BASE LINE (mobile only) ===== */
+    &__base-line {
+        display: none;
+
+        @include vp-767 {
+            display: block;
+            position: absolute;
+            top: 218px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 192px;
+            height: 4px;
+            margin: -6px auto 14px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #ff00ff,
+                #2de2e6,
+                #ff00ff,
+                transparent
+            );
+            border-radius: 4px;
+            box-shadow:
+                0 0 12px rgba(255, 0, 255, 0.7),
+                0 0 18px rgba(45, 226, 230, 0.6);
+        }
     }
 
     &__img {
@@ -26,6 +79,18 @@
         left: 0;
         bottom: -343px;
         width: 490px;
+
+        @include vp-1023 {
+            width: 360px;
+            bottom: -252px;
+        }
+
+        @include vp-767 {
+            position: static;
+            width: 220px;
+            margin: 0 auto 0;
+            z-index: 2;
+        }
     }
 
     &__title {
@@ -34,6 +99,18 @@
         flex-direction: column;
         line-height: 48px;
         margin: 0 0 40px 0;
+
+        @include vp-1023 {
+            font-size: 34px;
+            line-height: 40px;
+            margin-bottom: 28px;
+        }
+
+        @include vp-767 {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 18px;
+        }
     }
 
     &__title-top {
@@ -51,16 +128,37 @@
         font-size: 18px;
         font-weight: 400;
         margin: 0;
+
+        @include vp-1023 {
+            font-size: 16px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+        }
     }
 
     &__bottom-inner {
         max-width: 780px;
         display: flex;
         margin: 0 0 0 340px;
+
+        @include vp-1023 {
+            margin-left: 260px;
+        }
+
+        @include vp-767 {
+            margin: 0;
+            max-width: 100%;
+        }
     }
 
     &__text {
         text-align: justify;
         color: #2de2e6;
+
+        @include vp-767 {
+            text-align: left;
+        }
     }
 }

@@ -1,6 +1,5 @@
 .footer {
     padding: 60px 0 30px;
-
     background-color: #0a0a14;
 
     &__container {
@@ -49,6 +48,8 @@
         }
     }
 
+    /* ======== PROJECT STYLE PAYMENT ICONS ======== */
+
     &__payment-link {
         width: 80px;
         height: 36px;
@@ -59,18 +60,40 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(122, 63, 38, 0.2);
-        border: 1px solid #2a1a12;
-        border-radius: 4px;
+
+        background: linear-gradient(
+            135deg,
+            rgba(144, 126, 255, 0.22),
+            rgba(144, 126, 255, 0.08)
+        );
+        border: 1px solid rgba(144, 126, 255, 0.45);
+        border-radius: 8px;
+
+        box-shadow:
+            0 0 18px rgba(144, 126, 255, 0.35),
+            inset 0 0 8px rgba(255, 255, 255, 0.06);
+
         text-decoration: none;
-        transition: all 0.2s ease;
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease,
+            background 0.25s ease;
         flex-shrink: 0;
-        color: inherit;
+        color: #ffffff;
 
         &:hover,
         &:focus {
-            background-color: rgba(122, 63, 38, 0.4);
-            transform: translateY(-2px);
+            background: linear-gradient(
+                135deg,
+                rgba(255, 240, 26, 0.25),
+                rgba(144, 126, 255, 0.2)
+            );
+            border-color: rgba(255, 240, 26, 0.6);
+            box-shadow:
+                0 0 26px rgba(255, 240, 26, 0.45),
+                inset 0 0 12px rgba(255, 240, 26, 0.15);
+            transform: translateY(-3px);
             outline: none;
         }
 
@@ -99,6 +122,7 @@
             min-height: 28px;
             max-width: 56px;
             max-height: 28px;
+            border-radius: 6px;
         }
     }
 
@@ -108,7 +132,7 @@
         height: auto;
         max-width: 100%;
         max-height: 100%;
-        fill: currentColor;
+        filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.35));
     }
 
     &__bottom {
