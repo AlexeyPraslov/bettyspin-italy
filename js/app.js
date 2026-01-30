@@ -17,22 +17,18 @@ class CardsSection {
     }
 
     init() {
-        // Обработчики кликов по картам
         this.items.forEach((item) => {
             item.addEventListener("click", () => this.handleCardClick(item));
         });
 
-        // Закрытие попапа по клику на фон
         this.popup.addEventListener("click", (e) => {
             if (e.target === this.popup) {
                 this.closePopup();
             }
         });
 
-        // Закрытие попапа по крестику
         this.popupClose.addEventListener("click", () => this.closePopup());
 
-        // Отслеживание видимости секции
         window.addEventListener("scroll", () => this.handleScroll());
         window.addEventListener("resize", () => this.checkVisibility());
         window.addEventListener("load", () => this.checkVisibility());
@@ -43,7 +39,6 @@ class CardsSection {
             item.classList.add("cards__item--flipped");
             this.openedCount++;
 
-            // Показываем попап, когда все карты открыты
             if (this.openedCount === this.items.length) {
                 setTimeout(() => {
                     this.popup.classList.add("cards__popup--active");
@@ -84,7 +79,6 @@ class CardsSection {
         // Сброс карт
         this.resetCards();
 
-        // Запуск анимации появления
         this.animationTimeout = setTimeout(() => {
             this.items.forEach((item, index) => {
                 setTimeout(() => {
@@ -99,7 +93,6 @@ class CardsSection {
         const rect = this.section.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Секция считается видимой, если её середина в области просмотра
         const sectionMiddle = rect.top + rect.height / 2;
         const sectionVisible =
             sectionMiddle >= 0 && sectionMiddle <= windowHeight;
@@ -118,9 +111,7 @@ class CardsSection {
     }
 }
 
-// Инициализация при загрузке страницы
 document.addEventListener("DOMContentLoaded", () => {
-    // Создаём экземпляр для каждой секции
     new CardsSection({
         sectionSelector: "#cardsSection1",
         popupSelector: "#cardsPopup1",

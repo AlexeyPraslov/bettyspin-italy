@@ -25,7 +25,6 @@ class GameCatalog {
                 animated: false,
             });
 
-            // 📱 Мобилка — сразу показываем всё
             if (this.isMobile) {
                 items.forEach((item) => {
                     item.style.opacity = "1";
@@ -48,13 +47,11 @@ class GameCatalog {
                     );
                     if (!block) return;
 
-                    // ▶️ Вход (хотя бы частично)
                     if (entry.isIntersecting && !block.animated) {
                         this.animateBlock(block);
                         block.animated = true;
                     }
 
-                    // ⛔ Полный выход из viewport
                     if (!entry.isIntersecting && block.animated) {
                         const rect = entry.boundingClientRect;
                         const vh = window.innerHeight;

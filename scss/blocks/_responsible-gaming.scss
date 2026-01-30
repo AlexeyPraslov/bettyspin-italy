@@ -88,8 +88,6 @@
         }
     }
 
-    /* ================= GRID ================= */
-
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -182,8 +180,6 @@
             }
         }
     }
-
-    /* ================= CONTENT ================= */
 
     &__item-title {
         font-size: 18px;

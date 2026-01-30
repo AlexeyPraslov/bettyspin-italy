@@ -85,10 +85,6 @@
         }
     }
 
-    /* ===================== */
-    /* FEATURE CARDS */
-    /* ===================== */
-
     &__card-inner {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -226,9 +222,6 @@
         }
     }
 
-    /* ===================== */
-    /* VIP SECTION */
-    /* ===================== */
 
     &__vip {
         display: flex;
@@ -357,9 +350,6 @@
         }
     }
 
-    /* ===================== */
-    /* VIP COLORS */
-    /* ===================== */
 
     &__vip-card--bronze {
         box-shadow:

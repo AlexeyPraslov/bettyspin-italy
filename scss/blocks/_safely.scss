@@ -11,8 +11,6 @@
         padding: 44px 0;
     }
 
-    /* ================= WRAPPER ================= */
-
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -28,8 +26,6 @@
             gap: 26px;
         }
     }
-
-    /* ================= TITLE ================= */
 
     &__title {
         font-size: 36px;
@@ -85,8 +81,6 @@
             line-height: 1.6;
         }
     }
-
-    /* ================= SECURITY GRID ================= */
 
     &__grid {
         display: grid;
@@ -196,8 +190,6 @@
             line-height: 1.6;
         }
     }
-
-    /* ================= SUPPORT ================= */
 
     &__support {
         display: flex;

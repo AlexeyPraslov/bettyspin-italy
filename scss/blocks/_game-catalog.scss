@@ -76,10 +76,6 @@
         }
     }
 
-    /* ===================== */
-    /* TOP LIST */
-    /* ===================== */
-
     &__list {
         list-style: none;
         padding: 0;
@@ -152,10 +148,6 @@
         }
     }
 
-    /* ===================== */
-    /* CARD LIST (НИЖНИЕ СПИСКИ) */
-    /* ===================== */
-
     &__list--card {
         display: flex;
         flex-direction: column;
@@ -203,10 +195,6 @@
         }
     }
 
-    /* ===================== */
-    /* IMAGE + TEXT ROW */
-    /* ===================== */
-
     &__list-inner {
         display: flex;
         justify-content: space-between;
@@ -237,10 +225,6 @@
             max-width: 100%;
         }
     }
-
-    /* ===================== */
-    /* ANIMATION STATES */
-    /* ===================== */
 
     &__list-item--card,
     &__img {
@@ -281,10 +265,6 @@
         }
     }
 }
-
-/* ===================== */
-/* KEYFRAMES — НЕ ТРОГАЛ */
-/* ===================== */
 
 @keyframes game-catalog-slide-in-left {
     0% {

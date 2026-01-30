@@ -79,10 +79,6 @@
         }
     }
 
-    /* ===================== */
-    /* STEPS */
-    /* ===================== */
-
     &__step-card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -159,9 +155,6 @@
         }
     }
 
-    /* ===================== */
-    /* BADGE */
-    /* ===================== */
 
     &__card-badge {
         position: absolute;
@@ -184,10 +177,6 @@
             padding: 5px 12px;
         }
     }
-
-    /* ===================== */
-    /* TEXT */
-    /* ===================== */
 
     &__card-title {
         font-size: 18px;

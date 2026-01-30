@@ -65,8 +65,6 @@
         }
     }
 
-    /* ================= LIST ================= */
-
     &__list {
         display: flex;
         flex-direction: column;
@@ -151,8 +149,6 @@
             }
         }
     }
-
-    /* ================= QUESTION ================= */
 
     &__question {
         list-style: none;
@@ -242,8 +238,6 @@
     &__item[open] &__icon {
         transform: rotate(45deg);
     }
-
-    /* ================= ANSWER ================= */
 
     &__answer {
         padding: 0 24px 24px;

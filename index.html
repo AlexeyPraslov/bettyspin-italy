@@ -35,34 +35,32 @@
 
     <main>
         <section class="hero">
+            <img src="../images/hero-bg.png" alt="Hero Image" class="hero__image">
+
             <div class="container">
-                <div class="hero__wrapper">
-                    <div class="hero__top-inner">
+                <div class="hero__content">
 
-                        <img class="hero__img" src="images/hero-girl.webp" alt="hero girl">
-                        <div class="hero__base-line"></div>
 
-                        <div class="hero__right-col">
-                            <h1 class="hero__title">
-                                <span class="hero__title-top">Bettyspin Casino</span>
-                                <span class="hero__title-bottom">ecensione 2026</span>
-                            </h1>
+                    <h1 class="hero__title"><span>Bettyspin</span> Casino</h1>
+                    <p class="hero__subtitle">Bonus e promozioni esclusive</p>
 
-                            <p class="hero__description">bonus e promozioni
-                        </div>
-
-                        </p>
+                    <div class="hero__rating">
+                        <span class="hero__stars">★★★★★</span>
+                        <span class="hero__score">4.9 / 5</span>
                     </div>
-                    <div class="hero__bottom-inner">
-                        <p class="hero__text">Bettyspin è un operatore ibrido di nuova generazione, gestito dalla
-                            società Rossobash SRL. La piattaforma opera sotto una regolare licenza del Costa Rica e si
-                            distingue per la capacità di unire l'accessibilità dei metodi di pagamento tradizionali in
-                            Euro con la velocità e la privacy garantite dalla tecnologia blockchain. Con un catalogo che
-                            supera i 6.000 titoli, spaziando dalle slot machine Novomatic alle scommesse sportive,
-                            Bettyspin offre un ambiente di gioco flessibile e moderno, progettato per soddisfare sia gli
-                            utenti legati ai circuiti bancari classici sia coloro che preferiscono l'uso delle
-                            criptovalute.
-                        </p>
+
+                    <p class="hero__description">
+                        Bettyspin è un operatore ibrido di nuova generazione, gestito dalla società Rossobash SRL. La
+                        piattaforma opera sotto una regolare licenza del Costa Rica e si distingue per la capacità di
+                        unire l'accessibilità dei metodi di pagamento tradizionali in Euro con la velocità e la privacy
+                        garantite dalla tecnologia blockchain. Con un catalogo che supera i 6.000 titoli, spaziando
+                        dalle slot machine Novomatic alle scommesse sportive, Bettyspin offre un ambiente di gioco
+                        flessibile e moderno, progettato per soddisfare sia gli utenti legati ai circuiti bancari
+                        classici sia coloro che preferiscono l'uso delle criptovalute.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="{{link}}" class="hero__btn hero__btn--primary">Gioca ora</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +133,6 @@
             </div>
         </section>
 
-        <!-- Секция 1 -->
         <section class="cards" id="cardsSection1">
             <div class="cards__container">
                 <h1 class="cards__title">Tenta la fortuna ora!</h1>
@@ -181,12 +178,13 @@
             </div>
         </section>
 
+
         <div class="cards__popup" id="cardsPopup1">
             <div class="cards__popup-content">
                 <span class="cards__popup-close" id="cardsPopupClose1">&times;</span>
                 <div class="cards__popup-title">Congratulazioni!</div>
                 <div class="cards__popup-text">Hai Vinto</div>
-                <a class="cards__btn" href="#">Ritirare il premio</a>
+                <a class="cards__btn" href="{{link}}">Ritirare il premio</a>
             </div>
         </div>
 
@@ -202,7 +200,7 @@
                         <p class="cta-mobile__text">
                             Bonus esclusivi, prelievi rapidi e oltre 6.000 giochi ti aspettano.
                         </p>
-                        <a href="#" class="cta-mobile__btn">Gioca Ora</a>
+                        <a href="{{link}}" class="cta-mobile__btn">Gioca Ora</a>
                     </div>
                 </div>
             </div>
@@ -214,7 +212,7 @@
                     <h2 class="games__title">Top Games</h2>
 
                     <div class="games__track">
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/age-of-troy.webp" alt="Age Of Troy" />
                             <span class="games__overlay">
                                 <span class="games__name">Age Of Troy</span>
@@ -222,7 +220,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/almighty-reels-realm-of-poseidon.webp"
                                 alt="Almighty Reels realm of Poseidon" />
                             <span class="games__overlay">
@@ -231,7 +229,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/blue-heart.webp" alt="Blue Heart" />
                             <span class="games__overlay">
                                 <span class="games__name">Blue Heart</span>
@@ -239,7 +237,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/boxing-king.webp" alt="Boxing King" />
                             <span class="games__overlay">
                                 <span class="games__name">Boxing King</span>
@@ -247,7 +245,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/count-duckula.webp" alt="Count Duckula" />
                             <span class="games__overlay">
                                 <span class="games__name">Count Duckula</span>
@@ -255,7 +253,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/cricket-star.webp" alt="Cricket Star" />
                             <span class="games__overlay">
                                 <span class="games__name">Cricket Star</span>
@@ -263,7 +261,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/forgotten-Island.webp" alt="Forgotten Island" />
                             <span class="games__overlay">
                                 <span class="games__name">Forgotten Island</span>
@@ -271,63 +269,63 @@
                             </span>
                         </a>
 
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/fortune-gems-2.webp" alt="Fortune Gems 2" />
                             <span class="games__overlay">
                                 <span class="games__name">Fortune Gems 2</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/fortune-of-giza.webp" alt="Fortune of Giza" />
                             <span class="games__overlay">
                                 <span class="games__name">Fortune of Giza</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/fortune-panda.webp" alt="Fortune Panda" />
                             <span class="games__overlay">
                                 <span class="games__name">Fortune Panda</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/fortune-tiger-pg-soft.webp" alt="Fortune Tiger" />
                             <span class="games__overlay">
                                 <span class="games__name">Fortune Tiger</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/frost-queen-jackpots.webp" alt="Frost Queen Jackpots" />
                             <span class="games__overlay">
                                 <span class="games__name">Frost Queen Jackpots</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/fruit-party-2.webp" alt="Fruit Party 2" />
                             <span class="games__overlay">
                                 <span class="games__name">Fruit Party 2</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/ganesha-gold.webp" alt="Ganesha Gold" />
                             <span class="games__overlay">
                                 <span class="games__name">Ganesha Gold</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/great_star.webp" alt="Great Star" />
                             <span class="games__overlay">
                                 <span class="games__name">Great Star</span>
                                 <span class="games__play">Play</span>
                             </span>
                         </a>
-                        <a href="#" class="games__card">
+                        <a href="{{link}}" class="games__card">
                             <img src="images/games/lucky-catch.webp" alt="Lucky Catch" />
                             <span class="games__overlay">
                                 <span class="games__name">Lucky Catch</span>
@@ -430,7 +428,8 @@
                         <div class="registration__card">
                             <div class="registration__card-badge">1</div>
                             <h3 class="registration__card-title">Accesso</h3>
-                            <p class="registration__card-desc">Dalla home page, cliccare sul pulsante <a href="#">Sign
+                            <p class="registration__card-desc">Dalla home page, cliccare sul pulsante <a
+                                    href="{{link}}">Sign
                                     Up</a> situato in
                                 alto a destra</p>
                         </div>
@@ -512,7 +511,7 @@
                                 Buy), come Mummyland Treasures e Wild Cash x9990</li>
                         </ul>
 
-                        <img src="images/slot.webp" alt="" class="game-catalog__img">
+                        <img src="images/slot.webp" alt="slot" class="game-catalog__img">
                     </div>
 
                     <h3 class="game-catalog__subtitle">Casinò Live</h3>
@@ -522,7 +521,7 @@
 
                     <div class="game-catalog__list-inner">
 
-                        <img src="images/online.webp" alt="" class="game-catalog__img">
+                        <img src="images/online.webp" alt="online" class="game-catalog__img">
 
                         <ul class="game-catalog__list game-catalog__list--card">
                             <li class="game-catalog__list-item game-catalog__list-item--card"><strong>Roulette:
@@ -542,13 +541,13 @@
             </div>
         </section>
 
-        <!-- Секция 2 -->
+
         <section class="cards" id="cardsSection2">
             <div class="cards__container">
                 <h1 class="cards__title">Tenta la fortuna ora!</h1>
                 <p class="cards__subtitle">Tocca ogni mappa</p>
                 <ul class="cards__list">
-                    <!-- Карта 1 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -559,7 +558,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Карта 2 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -570,7 +569,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Карта 3 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -593,7 +592,7 @@
                 <span class="cards__popup-close" id="cardsPopupClose2">&times;</span>
                 <div class="cards__popup-title">Congratulazioni!</div>
                 <div class="cards__popup-text">Hai Vinto</div>
-                <a class="cards__btn" href="#">Ritirare il premio</a>
+                <a class="cards__btn" href="{{link}}">Ritirare il premio</a>
             </div>
         </div>
 
@@ -632,6 +631,7 @@
 
             </div>
         </section>
+
         <section class="cta-mobile">
             <div class="container">
                 <div class="cta-mobile__card">
@@ -644,7 +644,7 @@
                         <p class="cta-mobile__text">
                             Bonus esclusivi, prelievi rapidi e oltre 6.000 giochi ti aspettano.
                         </p>
-                        <a href="#" class="cta-mobile__btn">Gioca Ora</a>
+                        <a href="{{link}}" class="cta-mobile__btn">Gioca Ora</a>
                     </div>
                 </div>
             </div>
@@ -912,13 +912,13 @@
         </section>
 
 
-        <!-- Секция 3 -->
+
         <section class="cards" id="cardsSection3">
             <div class="cards__container">
                 <h1 class="cards__title">Tenta la fortuna ora!</h1>
                 <p class="cards__subtitle">Tocca ogni mappa</p>
                 <ul class="cards__list">
-                    <!-- Карта 1 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -929,7 +929,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Карта 2 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -940,7 +940,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Карта 3 -->
+
                     <li class="cards__item">
                         <div class="cards__inner">
                             <div class="cards__face cards__face--front">
@@ -963,7 +963,7 @@
                 <span class="cards__popup-close" id="cardsPopupClose3">&times;</span>
                 <div class="cards__popup-title">Congratulazioni!</div>
                 <div class="cards__popup-text">Hai Vinto</div>
-                <a class="cards__btn" href="#">Ritirare il premio</a>
+                <a class="cards__btn" href="{{link}}">Ritirare il premio</a>
             </div>
         </div>
 
@@ -973,7 +973,7 @@
                     <h2 class="review__title">Recensioni Reali dei Giocatori</h2>
 
                     <div class="review__grid">
-                        <!-- Card 1 -->
+
                         <div class="review__card">
                             <div class="review__header">
                                 <div class="review__avatar">
@@ -994,7 +994,7 @@
                             </p>
                         </div>
 
-                        <!-- Card 2 -->
+
                         <div class="review__card">
                             <div class="review__header">
                                 <div class="review__avatar">
@@ -1015,7 +1015,7 @@
                             </p>
                         </div>
 
-                        <!-- Card 3 -->
+
                         <div class="review__card">
                             <div class="review__header">
                                 <div class="review__avatar">
@@ -1050,7 +1050,7 @@
                         l'integrità del gioco e i dati sensibili degli utenti.
                     </p>
 
-                    <!-- Security Cards -->
+
                     <div class="safely__grid">
                         <article class="safely__card">
                             <h3 class="safely__card-title">Licenza e Protezione</h3>
@@ -1079,7 +1079,7 @@
                         </article>
                     </div>
 
-                    <!-- Support -->
+
                     <div class="safely__support">
                         <h3 class="safely__subtitle">Assistenza Clienti</h3>
                         <p class="safely__support-text">
@@ -1255,6 +1255,7 @@
                 </div>
             </div>
         </section>
+
         <section class="cta-mobile">
             <div class="container">
                 <div class="cta-mobile__card">
@@ -1267,7 +1268,7 @@
                         <p class="cta-mobile__text">
                             Bonus esclusivi, prelievi rapidi e oltre 6.000 giochi ti aspettano.
                         </p>
-                        <a href="#" class="cta-mobile__btn">Gioca Ora</a>
+                        <a href="{{link}}" class="cta-mobile__btn">Gioca Ora</a>
                     </div>
                 </div>
             </div>
@@ -1301,8 +1302,8 @@
                             <h3 class="responsible-gaming__item-title">Autoesclusione (Self-Exclusion)</h3>
                             <p class="responsible-gaming__item-text">
                                 In caso di necessità, il giocatore può richiedere la sospensione temporanea o permanente
-                                dell'account contattando l'assistenza via e-mail:
-                                <strong>contact@bettyspin.com</strong>.
+                                dell'account contattando l'assistenza via e-mail
+
                             </p>
                         </li>
 

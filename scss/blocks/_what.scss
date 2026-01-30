@@ -82,8 +82,6 @@
         }
     }
 
-    /* ================= GRID ================= */
-
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -195,8 +193,6 @@
         }
     }
 
-    /* ================= ICON ================= */
-
     &__icon {
         width: 46px;
         height: 46px;
@@ -246,8 +242,6 @@
             }
         }
     }
-
-    /* ================= CONTENT ================= */
 
     &__content {
         display: flex;
