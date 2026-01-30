@@ -134,6 +134,71 @@
             </div>
         </section>
 
+        <section class="cards">
+            <div class="cards__container">
+                <h1 class="cards__title">Tenta la fortuna ora!</h1>
+                <p class="cards__subtitle">Tocca ogni mappa</p>
+
+                <ul class="cards__list">
+                    <!-- Карта 1 -->
+                    <li class="cards__item">
+                        <div class="cards__inner">
+                            <div class="cards__face cards__face--front">
+                                <img src="images/back.png" alt="">
+
+                            </div>
+                            <div class="cards__face cards__face--back">
+                                <img src="images/card-1.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Карта 2 -->
+                    <li class="cards__item">
+                        <div class="cards__inner">
+                            <div class="cards__face cards__face--front">
+                                <img src="images/back.png" alt="">
+                            </div>
+                            <div class="cards__face cards__face--back">
+                                <img src="images/card-2.png" alt="">
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Карта 3 -->
+                    <li class="cards__item">
+                        <div class="cards__inner">
+                            <div class="cards__face cards__face--front">
+                                <img src="images/back.png" alt="">
+                            </div>
+                            <div class="cards__face cards__face--back">
+                                <img src="images/card-3.png" alt="">
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="cards__hint">
+                    <p class="card__description">
+                        Tocca qualsiasi carta per aprirla
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+        <div class="cards__popup" id="cardsPopup">
+            <div class="cards__popup-content">
+                <span class="cards__popup-close" id="cardsPopupClose">&times;</span>
+                <div class="cards__popup-title">Congratulazioni!</div>
+                <div class="cards__popup-text">Hai Vinto</div>
+                <a class="cards__btn" href="#">Ritirare il premio</a>
+            </div>
+        </div>
+
         <section class="bonus">
             <div class="container">
                 <div class="bonus__wrapper">
@@ -440,6 +505,679 @@
             </div>
         </section>
 
+        <section class="gamification">
+            <div class="container">
+                <div class="gamification__wrapper">
+                    <h2 class="gamification__title">
+                        Gamification e Fedeltà
+                    </h2>
+                    <p class="gamification__text">L'aspetto più distintivo di Bettyspin risiede nel suo approccio alla
+                        fidelizzazione. Anziché limitarsi a una raccolta punti passiva, l'operatore ha costruito un
+                        sistema di "Gamification" simile a un videogioco di ruolo (RPG), dove l'attività dell'utente
+                        viene premiata costantemente attraverso valuta virtuale e livelli.</p>
+
+                    <h3 class="gamification__subtitle">Gli Elementi del Sistema</h3>
+                    <p class="gamification__subtitle-text">Il coinvolgimento del giocatore è stimolato attraverso tre
+                        meccaniche interconnesse:</p>
+
+                    <div class="gamification__card-inner">
+                        <div class="gamification__card">
+                            <div class="gamification__card-text-inner">
+                                <h3 class="gamification__card-title">Missioni (Missions)</h3>
+                                <p class="gamification__card-desc">Gli utenti possono completare compiti giornalieri o
+                                    una
+                                    tantum, come "Verifica la tua email" o "Effettua 50 spin", per guadagnare Monete
+                                    (Coins)
+                                </p>
+                            </div>
+
+                            <img src="images/111.png" alt="" class="gamification__card-img">
+                        </div>
+
+                        <div class="gamification__card">
+                            <div class="gamification__card-text-inner">
+                                <h3 class="gamification__card-title">Missioni (Missions)</h3>
+                                <p class="gamification__card-desc">Gli utenti possono completare compiti giornalieri o
+                                    una
+                                    tantum, come "Verifica la tua email" o "Effettua 50 spin", per guadagnare Monete
+                                    (Coins)
+                                </p>
+                            </div>
+
+                            <img src="images/222.png" alt="" class="gamification__card-img">
+                        </div>
+
+                        <div class="gamification__card">
+                            <div class="gamification__card-text-inner">
+                                <h3 class="gamification__card-title">Missioni (Missions)</h3>
+                                <p class="gamification__card-desc">Gli utenti possono completare compiti giornalieri o
+                                    una
+                                    tantum, come "Verifica la tua email" o "Effettua 50 spin", per guadagnare Monete
+                                    (Coins)
+                                </p>
+                            </div>
+
+                            <img src="images/333.png" alt="" class="gamification__card-img">
+                        </div>
+
+                    </div>
+
+                    <h3 class="gamification__subtitle">Programma VIP e Rakeback</h3>
+
+                    <p class="gamification__text">La fedeltà a lungo termine viene gestita tramite un sistema a ranghi
+                        (Ranks) che sblocca vantaggi crescenti, in particolare il Rakeback, ovvero una restituzione
+                        percentuale sulla tassa della casa (house edge), indipendente dall'esito della giocata (vittoria
+                        o sconfitta).</p>
+
+                    <p class="gamification__subtitle-text">La seguente tabella illustra la progressione dei livelli e lo
+                        sblocco dei privilegi:</p>
+
+                    <div class="gamification__vip">
+                        <h3 class="gamification__vip-title">Livelli VIP</h3>
+
+                        <div class="gamification__vip-grid">
+                            <div class="gamification__vip-card gamification__vip-card--bronze">
+                                <div class="gamification__vip-rank">Bronze</div>
+                                <div class="gamification__vip-benefits">
+                                    Accesso al sistema, Missioni base
+                                </div>
+                                <div class="gamification__vip-rakeback">—</div>
+                            </div>
+
+                            <div class="gamification__vip-card gamification__vip-card--silver">
+                                <div class="gamification__vip-rank">Silver</div>
+                                <div class="gamification__vip-benefits">
+                                    Accesso iniziale al Rakeback
+                                </div>
+                                <div class="gamification__vip-rakeback">
+                                    Rakeback Mensile
+                                </div>
+                            </div>
+
+                            <div class="gamification__vip-card gamification__vip-card--gold">
+                                <div class="gamification__vip-rank">Gold</div>
+                                <div class="gamification__vip-benefits">
+                                    Limiti prelievo aumentati, Supporto prioritario
+                                </div>
+                                <div class="gamification__vip-rakeback">
+                                    Rakeback Settimanale + Mensile
+                                </div>
+                            </div>
+
+                            <div class="gamification__vip-card gamification__vip-card--platinum">
+                                <div class="gamification__vip-rank">Platinum</div>
+                                <div class="gamification__vip-benefits">
+                                    VIP Manager, Limiti massimi
+                                </div>
+                                <div class="gamification__vip-rakeback">
+                                    Instant Rakeback + Settimanale + Mensile
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p class="gamification__text">Il sistema di Rakeback combinato può restituire fino al 17% matematico
+                        del margine teorico del casinò, rappresentando un valore notevole per i giocatori frequenti
+                        (High Rollers).</p>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="banking">
+            <div class="container">
+                <div class="banking__wrapper">
+                    <h2 class="banking__title">
+                        Metodi Bancari: Fiat vs Crypto
+                    </h2>
+
+                    <p class="banking__text">La natura ibrida di Bettyspin rappresenta uno dei suoi punti di forza
+                        principali. La piattaforma è progettata per gestire parallelamente due flussi di pagamento
+                        distinti, permettendo agli utenti di scegliere la modalità più adatta alle proprie abitudini
+                        finanziarie, pur mantenendo l'Euro come valuta di base del conto gioco.
+                    </p>
+
+                    <div class="banking__flows">
+                        <div class="banking__flow banking__flow--fiat">
+                            <h3 class="banking__flow-title">Flusso Fiat (Tradizionale)</h3>
+                            <p class="banking__flow-text">
+                                Questa opzione è ideale per chi preferisce la semplicità dei sistemi bancari classici.
+                                Bettyspin supporta
+                                depositi diretti tramite Carta di Credito/Debito (Visa e Mastercard) e integra metodi
+                                molto diffusi in Italia
+                                come Revolut e Skrill. I depositi sono istantanei, mentre i prelievi avvengono
+                                solitamente tramite Bonifico
+                                Bancario.
+                            </p>
+                        </div>
+
+                        <div class="banking__flow banking__flow--crypto">
+                            <h3 class="banking__flow-title">Flusso Crypto (Web3)</h3>
+                            <p class="banking__flow-text">
+                                Per gli utenti che cercano privacy, limiti flessibili e velocità, il flusso Crypto è la
+                                scelta raccomandata.
+                                Bettyspin opera come un wallet diretto, supportando Bitcoin, Ethereum, Litecoin e,
+                                soprattutto, stablecoin
+                                come USDT (Tether).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="banking__table">
+                        <div class="banking__table-head">
+                            <div>Metodo</div>
+                            <div>Tipo</div>
+                            <div>Limiti (Min/Max)</div>
+                            <div>Tempistica</div>
+                            <div>Commissioni</div>
+                        </div>
+
+                        <div class="banking__table-row">
+                            <div>Visa / Mastercard</div>
+                            <div class="banking__badge banking__badge--fiat">Fiat</div>
+                            <div>10 € – 2.000 €</div>
+                            <div>Immediato</div>
+                            <div>0%</div>
+                        </div>
+
+                        <div class="banking__table-row">
+                            <div>Revolut</div>
+                            <div class="banking__badge banking__badge--fiat">Fiat</div>
+                            <div>20 € – 2.000 €</div>
+                            <div>Immediato</div>
+                            <div>0%</div>
+                        </div>
+
+                        <div class="banking__table-row">
+                            <div>Skrill</div>
+                            <div class="banking__badge banking__badge--fiat">Fiat</div>
+                            <div>20 € – 2.000 €</div>
+                            <div>Entro 24 ore</div>
+                            <div>0%</div>
+                        </div>
+
+                        <div class="banking__table-row banking__table-row--highlight">
+                            <div>USDT (TRC-20)</div>
+                            <div class="banking__badge banking__badge--crypto">Crypto</div>
+                            <div>Min. 3 USDT – Illimitato</div>
+                            <div>Immediato*</div>
+                            <div>Network fee</div>
+                        </div>
+
+                        <div class="banking__table-row">
+                            <div>Bitcoin / LTC</div>
+                            <div class="banking__badge banking__badge--crypto">Crypto</div>
+                            <div>Min. variabile – Illimitato</div>
+                            <div>Immediato*</div>
+                            <div>Network fee</div>
+                        </div>
+
+                        <div class="banking__table-row">
+                            <div>Bonifico Bancario</div>
+                            <div class="banking__badge banking__badge--withdraw">Prelievo</div>
+                            <div>50 € – 10.000 €/mese</div>
+                            <div>1–5 Giorni</div>
+                            <div>0%</div>
+                        </div>
+
+                        <div class="banking__table-note">
+                            * Il deposito minimo in USDT su rete TRC-20 è equivalente a circa 3 €, rendendolo il metodo
+                            più accessibile.
+                        </div>
+                    </div>
+
+                    <div class="banking__rules">
+                        <h3 class="banking__rules-title">Procedura di Prelievo: Cosa Sapere</h3>
+
+                        <div class="banking__rules-grid">
+                            <div class="banking__rule">
+                                <h4 class="banking__rule-title">Tempi di elaborazione</h4>
+                                <p class="banking__rule-text">
+                                    Le richieste di prelievo vengono gestite internamente entro 24 ore. Successivamente,
+                                    i tempi dipendono
+                                    dal metodo scelto: bonifici richiedono giorni bancari, crypto pochi minuti dopo
+                                    l'approvazione.
+                                </p>
+                            </div>
+
+                            <div class="banking__rule">
+                                <h4 class="banking__rule-title">Verifica KYC Obbligatoria</h4>
+                                <p class="banking__rule-text">
+                                    Prima del primo prelievo è necessario completare la verifica dell'identità caricando
+                                    documento valido
+                                    e prova di residenza.
+                                </p>
+                            </div>
+
+                            <div class="banking__rule">
+                                <h4 class="banking__rule-title">Regola del Turnover (x3)</h4>
+                                <p class="banking__rule-text">
+                                    Ogni deposito deve essere giocato almeno 3 volte prima del prelievo. Esempio: 20 € →
+                                    60 € di volume.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="container">
+                <div class="review__wrapper">
+                    <h2 class="review__title">Recensioni Reali dei Giocatori</h2>
+
+                    <div class="review__grid">
+                        <!-- Card 1 -->
+                        <article class="review__card">
+                            <div class="review__header">
+                                <div class="review__avatar">
+                                    <img src="images/reviews/marco.webp" alt="Marco SlotFan88">
+                                </div>
+                                <div class="review__meta">
+                                    <div class="review__name">Marco <span>"SlotFan88"</span></div>
+                                    <div class="review__role">L'Appassionato di Novomatic</div>
+                                </div>
+                                <div class="review__rating">⭐ 4.5/5</div>
+                            </div>
+
+                            <p class="review__text">
+                                "Per me che ho sempre giocato alle VLT, trovare Book of Ra Deluxe e Sizzling Hot
+                                originali in un casinò che accetta crypto è il massimo. Il sito è veloce. L'unico
+                                difetto è il prelievo minimo con bonifico fissato a 50 €, che è un po' alto se giochi
+                                piccole cifre, ma passando a USDT ho risolto."
+                            </p>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="review__card">
+                            <div class="review__header">
+                                <div class="review__avatar">
+                                    <img src="images/reviews/giulia.webp" alt="Giulia PromoHunter">
+                                </div>
+                                <div class="review__meta">
+                                    <div class="review__name">Giulia <span>"PromoHunter"</span></div>
+                                    <div class="review__role">L'Esperta di Bonus</div>
+                                </div>
+                                <div class="review__rating">⭐ 4/5</div>
+                            </div>
+
+                            <p class="review__text">
+                                "Il sistema di fidelizzazione è il vero motivo per cui resto. Non sono solo punti finti:
+                                con le monete guadagnate ho comprato 30 Giri Gratuiti nello Store la scorsa settimana.
+                                Il bonus di benvenuto è generoso (1.500€ totali), ma leggete bene i T&C: sono
+                                severissimi sul limite di puntata massima di 5 euro quando avete il bonus attivo."
+                            </p>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="review__card">
+                            <div class="review__header">
+                                <div class="review__avatar">
+                                    <img src="images/reviews/luca.webp" alt="Luca IlTifoso">
+                                </div>
+                                <div class="review__meta">
+                                    <div class="review__name">Luca <span>"IlTifoso"</span></div>
+                                    <div class="review__role">Lo Scommettitore Sportivo</div>
+                                </div>
+                                <div class="review__rating">⭐ 5/5</div>
+                            </div>
+
+                            <p class="review__text">
+                                "Ottimo sportsbook per la Serie A. Le quote sono in linea con i big e ho apprezzato la
+                                funzione Bet Builder per combinare marcatori e risultati. Non c'è l'app da scaricare
+                                sull'Apple Store, ma aggiungendo il sito alla home funziona esattamente come un'app,
+                                quindi per me va benissimo per le live."
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="safely">
+            <div class="container">
+                <div class="safely__wrapper">
+                    <h2 class="safely__title">Servizio e Sicurezza</h2>
+
+                    <p class="safely__intro">
+                        Bettyspin adotta un'infrastruttura tecnologica progettata per proteggere
+                        l'integrità del gioco e i dati sensibili degli utenti.
+                    </p>
+
+                    <!-- Security Cards -->
+                    <div class="safely__grid">
+                        <article class="safely__card">
+                            <h3 class="safely__card-title">Licenza e Protezione</h3>
+                            <p class="safely__card-text">
+                                L'operatore Rossobash SRL gestisce la piattaforma sotto la giurisdizione
+                                e la licenza del Costa Rica.
+                            </p>
+                        </article>
+
+                        <article class="safely__card">
+                            <h3 class="safely__card-title">Sicurezza Dati</h3>
+                            <p class="safely__card-text">
+                                Tutte le pagine e le transazioni finanziarie sono protette da crittografia
+                                SSL (Secure Socket Layer) a 128-bit o superiore, garantendo che i dati
+                                scambiati tra utente e server rimangano privati.
+                            </p>
+                        </article>
+
+                        <article class="safely__card">
+                            <h3 class="safely__card-title">Fairness (Equità)</h3>
+                            <p class="safely__card-text">
+                                L'integrità dei risultati di gioco (slot e table games virtuali) è
+                                assicurata da un RNG (Generatore di Numeri Casuali) testato. I giochi
+                                provengono esclusivamente da provider certificati.
+                            </p>
+                        </article>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="safely__support">
+                        <h3 class="safely__subtitle">Assistenza Clienti</h3>
+                        <p class="safely__support-text">
+                            Il supporto è disponibile 24 ore su 24 per risolvere dubbi tecnici o amministrativi.
+                        </p>
+
+                        <div class="safely__support-grid">
+                            <div class="safely__support-card">
+                                <div class="safely__support-head">
+                                    <span class="safely__support-channel">Live Chat</span>
+                                    <span class="safely__support-time">24/7</span>
+                                </div>
+                                <p class="safely__support-note">
+                                    Risposta immediata (&lt; 2 minuti). Il supporto primario è in inglese,
+                                    ma utilizzano traduttori automatici efficienti per l'italiano.
+                                </p>
+                            </div>
+
+                            <div class="safely__support-card">
+                                <div class="safely__support-head">
+                                    <span class="safely__support-channel">E-mail</span>
+                                    <span class="safely__support-time">24/7</span>
+                                </div>
+                                <p class="safely__support-note">
+                                    L'e-mail è ideale per l'invio di documenti KYC o reclami formali.
+                                </p>
+                            </div>
+
+                            <div class="safely__support-card">
+                                <div class="safely__support-head">
+                                    <span class="safely__support-channel">FAQ</span>
+                                    <span class="safely__support-time">Sempre attivo</span>
+                                </div>
+                                <p class="safely__support-note">
+                                    Una base di conoscenza dettagliata su bonus, depositi e gestione conto
+                                    è integrata nel sito.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobile">
+            <div class="container">
+                <div class="mobile__wrapper">
+                    <h2 class="mobile__title">Accessibilità Mobile: Web App PWA</h2>
+
+                    <p class="mobile__intro">
+                        Bettyspin ha scelto di non sviluppare applicazioni native pesanti per iOS o Android, puntando su
+                        una
+                        soluzione più agile e universale: la <span>Progressive Web App (PWA)</span>. La piattaforma
+                        mobile è una
+                        versione speculare del desktop, ottimizzata per il touch e perfettamente fluida su qualsiasi
+                        browser
+                        (Safari, Chrome, Firefox).
+                    </p>
+
+                    <div class="mobile__card">
+                        <h3 class="mobile__subtitle">Come installare l'App Bettyspin (Guida Rapida)</h3>
+
+                        <ol class="mobile__steps">
+                            <li class="mobile__step">
+                                <span class="mobile__step-index">1</span>
+                                <p class="mobile__step-text">
+                                    Apri il sito ufficiale di Bettyspin dal browser del tuo smartphone.
+                                </p>
+                            </li>
+
+                            <li class="mobile__step">
+                                <span class="mobile__step-index">2</span>
+                                <p class="mobile__step-text">
+                                    Accedi al menu delle opzioni del browser.
+                                </p>
+                            </li>
+
+                            <li class="mobile__step">
+                                <span class="mobile__step-index">3</span>
+                                <p class="mobile__step-text">
+                                    Seleziona la voce <strong>"Aggiungi a schermata Home"</strong> (o <strong>"Installa
+                                        App"</strong> su alcuni Android).
+                                </p>
+                            </li>
+
+                            <li class="mobile__step">
+                                <span class="mobile__step-index">4</span>
+                                <p class="mobile__step-text">
+                                    L'icona di Bettyspin apparirà tra le tue app: cliccandola accederai al casinò a
+                                    schermo
+                                    intero senza barre di navigazione, proprio come un'app nativa.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what">
+            <div class="container">
+                <div class="what__wrapper">
+                    <h2 class="what__title">Perché scegliere Bettyspin</h2>
+
+                    <p class="what__intro">
+                        In conclusione, Bettyspin si propone come una piattaforma solida per diverse tipologie di
+                        utenti,
+                        grazie a quattro caratteristiche distintive che la differenziano dai concorrenti standard:
+                    </p>
+
+                    <ul class="what__list">
+                        <li class="what__item">
+                            <div class="what__icon">
+                                <img src="images/icons/payments.svg" alt="" loading="lazy">
+                            </div>
+                            <div class="what__content">
+                                <h3 class="what__item-title">Pagamenti Ibridi</h3>
+                                <p class="what__item-text">
+                                    Offre la libertà di utilizzare comodamente la valuta Euro tramite carte e banche, ma
+                                    apre
+                                    anche alle criptovalute (<strong>USDT, BTC</strong>) per chi cerca limiti più
+                                    flessibili e
+                                    maggiore velocità.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="what__item">
+                            <div class="what__icon">
+                                <img src="images/icons/loyalty.svg" alt="" loading="lazy">
+                            </div>
+                            <div class="what__content">
+                                <h3 class="what__item-title">Gamification Concreta</h3>
+                                <p class="what__item-text">
+                                    Il <strong>"Loyalty Store"</strong> trasforma la fedeltà in premi tangibili. Le
+                                    monete
+                                    guadagnate non sono solo un punteggio estetico, ma valuta di scambio per comprare
+                                    Bonus e
+                                    Free Spins.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="what__item">
+                            <div class="what__icon">
+                                <img src="images/icons/games.svg" alt="" loading="lazy">
+                            </div>
+                            <div class="what__content">
+                                <h3 class="what__item-title">Catalogo Premium</h3>
+                                <p class="what__item-text">
+                                    Riunisce in un'unica lobby i grandi classici da bar (<strong>Novomatic /
+                                        Greentube</strong>)
+                                    e le ultime novità del settore Crash / Instant, offrendo una profondità di oltre
+                                    <strong>6.000 giochi</strong>.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="what__item what__item--wide">
+                            <div class="what__icon">
+                                <img src="images/icons/speed.svg" alt="" loading="lazy">
+                            </div>
+                            <div class="what__content">
+                                <h3 class="what__item-title">Velocità Crypto</h3>
+                                <p class="what__item-text">
+                                    A differenza di molti operatori tradizionali, Bettyspin eccelle nei tempi di
+                                    elaborazione
+                                    dei prelievi tramite blockchain, riducendo le attese tipiche del sistema bancario.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="responsible-gaming">
+            <div class="container">
+                <div class="responsible-gaming__wrapper">
+                    <h2 class="responsible-gaming__title">Gioco Responsabile</h2>
+
+                    <p class="responsible-gaming__intro">
+                        Bettyspin si impegna a promuovere un ambiente di intrattenimento sicuro, mettendo a disposizione
+                        degli
+                        utenti una serie di strumenti per gestire le proprie abitudini di gioco. All'interno della
+                        sezione
+                        <strong>"Responsible Gaming"</strong> del proprio profilo personale, è possibile attivare
+                        autonomamente:
+                    </p>
+
+                    <ul class="responsible-gaming__list">
+                        <li class="responsible-gaming__item">
+                            <h3 class="responsible-gaming__item-title">Limiti di Deposito</h3>
+                            <p class="responsible-gaming__item-text">
+                                Tetti massimi impostabili su base <strong>giornaliera, settimanale o mensile</strong>
+                                per
+                                controllare la spesa e mantenere il gioco entro limiti responsabili.
+                            </p>
+                        </li>
+
+                        <li class="responsible-gaming__item">
+                            <h3 class="responsible-gaming__item-title">Autoesclusione (Self-Exclusion)</h3>
+                            <p class="responsible-gaming__item-text">
+                                In caso di necessità, il giocatore può richiedere la sospensione temporanea o permanente
+                                dell'account contattando l'assistenza via e-mail:
+                                <strong>contact@bettyspin.com</strong>.
+                            </p>
+                        </li>
+
+                        <li class="responsible-gaming__item">
+                            <h3 class="responsible-gaming__item-title">Politica 18+</h3>
+                            <p class="responsible-gaming__item-text">
+                                La registrazione è severamente vietata ai minori di <strong>18 anni</strong> e la
+                                piattaforma
+                                esegue controlli rigorosi per prevenire l'accesso ai minori.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <h2 class="faq__title">FAQ (Domande Frequenti)</h2>
+
+                    <div class="faq__list">
+                        <details class="faq__item" open>
+                            <summary class="faq__question">
+                                Bettyspin è una piattaforma legale?
+                                <span class="faq__icon"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                Sì, Bettyspin è gestita da <strong>Rossobash SRL</strong> e opera legalmente sotto
+                                licenza
+                                internazionale rilasciata in Costa Rica (Reg. No. 3-102-900313), rispettando le
+                                normative
+                                internazionali sul gioco online.
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                Quali documenti devo inviare per la verifica (KYC)?
+                                <span class="faq__icon"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                Per sbloccare i prelievi è obbligatorio verificare l'identità. Generalmente sono
+                                richiesti:
+                                una foto fronte/retro di un documento d'identità valido (Passaporto o Carta d'Identità)
+                                e
+                                una prova di residenza recente (bolletta utenze o estratto conto bancario).
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                Qual è il deposito minimo con Criptovalute?
+                                <span class="faq__icon"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                Il limite di deposito varia in base alla moneta scelta, ma è estremamente accessibile:
+                                ad esempio, per <strong>USDT su rete TRC-20</strong> il deposito minimo è di soli
+                                <strong>3 USDT</strong> (circa 3 €).
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                Posso giocare su Bettyspin senza scaricare app?
+                                <span class="faq__icon"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                Sì. Bettyspin utilizza la tecnologia <strong>Web App (PWA)</strong>, che rende il sito
+                                perfettamente fruibile dal browser di qualsiasi smartphone o tablet iOS e Android,
+                                senza occupare spazio sul dispositivo.
+                            </div>
+                        </details>
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                Quanto tempo ho per utilizzare il bonus di benvenuto?
+                                <span class="faq__icon"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                I bonus del casinò devono essere utilizzati e completati
+                                (<strong>requisito di scommessa x35</strong>) entro <strong>7 giorni</strong>
+                                dall'attivazione. Per i bonus sulle scommesse sportive, la validità è estesa a
+                                <strong>14 giorni</strong>.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
 
@@ -476,11 +1214,10 @@
             <div class="footer__bottom">
                 <p class="footer__bottom-text">
                     Il gioco d'azzardo può creare dipendenza. Gioca in modo responsabile. Solo i clienti più anziani
-                    sono accettati in Dragonia
-                    18 anni.
+                    sono accettati in BettySpin 18 anni
                 </p>
                 <p class="footer__bottom-text">
-                    2026 &copy; Dragonia Tutti i diritti riservati
+                    2026 © BettySpin tutti i diritti riservati
                 </p>
             </div>
         </div>

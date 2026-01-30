@@ -1,15 +1,12 @@
 .game-catalog {
-    padding: 40px 0;
+    padding: 60px 0;
     position: relative;
     overflow: hidden;
 
     &::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0;
         pointer-events: none;
         z-index: 0;
     }
@@ -17,7 +14,7 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 28px;
         position: relative;
         z-index: 1;
     }
@@ -42,55 +39,104 @@
                 transparent
             );
             border-radius: 2px;
+            box-shadow: 0 0 12px rgba(144, 126, 255, 0.7);
         }
     }
 
     &__text {
         font-size: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.9);
 
         span {
             color: #fff01a;
+            text-shadow: 0 0 10px rgba(255, 240, 26, 0.45);
         }
     }
 
+    &__subtitle {
+        font-size: 28px;
+        color: #fff01a;
+        text-shadow: 0 0 12px rgba(255, 240, 26, 0.45);
+    }
+
+    /* ===================== */
+    /* TOP LIST — GLASS + NEON */
+    /* ===================== */
+
     &__list {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
     }
 
     &__list-item {
-        background: rgba(15, 15, 35, 0.9);
-        border: 1px solid #ff00ff;
-        border-radius: 12px;
-        padding: 16px 20px;
-        margin-bottom: 16px;
-        font-size: 14px;
-
-        box-shadow:
-            inset 0 0 10px rgba(255, 0, 255, 0.3),
-            0 0 15px rgba(255, 0, 255, 0.4);
         position: relative;
+        padding: 22px 22px;
+        border-radius: 22px;
+        background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.03)
+        );
+        border: 1px solid rgba(144, 126, 255, 0.35);
+        backdrop-filter: blur(12px);
+        box-shadow:
+            0 18px 50px rgba(0, 0, 0, 0.45),
+            0 0 28px rgba(144, 126, 255, 0.45),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        font-size: 15px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+        transition:
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow:
+                0 26px 70px rgba(0, 0, 0, 0.55),
+                0 0 44px rgba(144, 126, 255, 0.75);
+        }
 
         &::before {
             content: "";
             position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            border-radius: 14px;
-            box-shadow: 0 0 8px #ff00ff;
+            inset: -1px;
+            border-radius: 24px;
+            background: linear-gradient(
+                120deg,
+                transparent 25%,
+                rgba(144, 126, 255, 0.9),
+                transparent 75%
+            );
+            opacity: 0.2;
             pointer-events: none;
-            z-index: -1;
         }
 
         strong {
+            display: block;
+            margin-bottom: 6px;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 700;
             color: #907eff;
+            text-shadow: 0 0 10px rgba(144, 126, 255, 0.5);
         }
     }
 
-    // Модификатор для карточных списков
+    /* ===================== */
+    /* CARD LIST — НЕ ТРОГАЛ */
+    /* ===================== */
+
     &__list--card {
         display: flex;
         flex-direction: column;
@@ -100,11 +146,8 @@
     }
 
     &__list-item--card {
-        // Полностью сбрасываем наследуемые стили
         all: unset;
         display: block;
-
-        // Применяем чистые стили карточки
         background: rgba(5, 5, 20, 0.9);
         color: white;
         box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.4);
@@ -114,18 +157,14 @@
         border-radius: 12px;
         text-align: left;
         flex: 0 0 auto;
-
-        // Запрет выделения текста
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-
         margin-bottom: 12px;
         font-size: 14px;
         position: relative;
 
-        // Убираем все псевдоэлементы
         &::before,
         &::after {
             display: none !important;
@@ -140,7 +179,6 @@
         }
     }
 
-    // Анимации для карточек
     &__list-item--card,
     &__img {
         opacity: 0;
@@ -201,7 +239,10 @@
     }
 }
 
-// Ключевые кадры анимации
+/* ===================== */
+/* KEYFRAMES — НЕ ТРОГАЛ */
+/* ===================== */
+
 @keyframes game-catalog-slide-in-left {
     0% {
         opacity: 0;
