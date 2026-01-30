@@ -179,7 +179,7 @@
         object-fit: cover;
         position: absolute;
         inset: 0;
-        transform: translateZ(1px); // ⚠️ фикс зеркалинга на iOS / mobile GPU
+        transform: translateZ(1px);
     }
 
     &__face span {
@@ -313,8 +313,6 @@
         opacity: 0.85;
     }
 }
-
-/* ================= ANIMATIONS ================= */
 
 @keyframes cards-fade-in-up {
     0% {

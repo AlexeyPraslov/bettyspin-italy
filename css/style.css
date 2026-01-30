@@ -1455,7 +1455,6 @@ p {
   opacity: 0.85;
 }
 
-/* ================= ANIMATIONS ================= */
 @-webkit-keyframes cards-fade-in-up {
   0% {
     opacity: 0;
@@ -1468,6 +1467,7 @@ p {
             transform: translateY(0);
   }
 }
+
 @keyframes cards-fade-in-up {
   0% {
     opacity: 0;
